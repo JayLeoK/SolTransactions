@@ -22,6 +22,7 @@ import {
 
 import React from "react";
 import Modal from "./components/ui/Modal";
+import { Buffer } from "buffer";
 
 import "@solana/wallet-adapter-react-ui/styles.css";
 import TransactionForm from "./components/TransactionForm";
@@ -29,6 +30,8 @@ import TransactionsView from "./components/TransactionsView";
 
 function App() {
   const { publicKey } = useWallet();
+  //fix buffer dependency issue
+  window.Buffer = window.Buffer || Buffer;
 
   React.useEffect(() => {
     console.log("publicKey", publicKey);

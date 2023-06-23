@@ -25,6 +25,7 @@
     "@tanstack/match-sorter-utils": "^8.8.4",
     "@tanstack/react-table": "^8.9.2",
     "add": "^2.0.6",
+    "buffer": "^6.0.3",
     "firebase": "^9.17.2",
     "gh-pages": "^5.0.0",
     "react": "^18.2.0",
