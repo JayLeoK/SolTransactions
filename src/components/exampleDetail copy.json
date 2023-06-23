@@ -1,0 +1,122 @@
+{
+  "_firestore": {
+    "app": {
+      "_isDeleted": false,
+      "_options": {
+        "apiKey": "AIzaSyCnymgBlx5yirDHXVy23tpDmUX_mXpcAak",
+        "authDomain": "parclsoltransactions.firebaseapp.com",
+        "projectId": "parclsoltransactions",
+        "storageBucket": "parclsoltransactions.appspot.com",
+        "messagingSenderId": "461076459515",
+        "appId": "1:461076459515:web:7379c40dbc09666ef3e55e",
+        "measurementId": "G-WPLZJ87DLV"
+      },
+      "_config": {
+        "name": "[DEFAULT]",
+        "automaticDataCollectionEnabled": false
+      },
+      "_name": "[DEFAULT]",
+      "_automaticDataCollectionEnabled": false,
+      "_container": { "name": "[DEFAULT]", "providers": {} }
+    },
+    "databaseId": {
+      "projectId": "parclsoltransactions",
+      "database": "(default)"
+    },
+    "settings": {
+      "host": "firestore.googleapis.com",
+      "ssl": true,
+      "ignoreUndefinedProperties": false,
+      "cacheSizeBytes": 41943040,
+      "experimentalForceLongPolling": false,
+      "experimentalAutoDetectLongPolling": true,
+      "experimentalLongPollingOptions": {},
+      "useFetchStreams": true
+    }
+  },
+  "_userDataWriter": {
+    "firestore": {
+      "app": {
+        "_isDeleted": false,
+        "_options": {
+          "apiKey": "AIzaSyCnymgBlx5yirDHXVy23tpDmUX_mXpcAak",
+          "authDomain": "parclsoltransactions.firebaseapp.com",
+          "projectId": "parclsoltransactions",
+          "storageBucket": "parclsoltransactions.appspot.com",
+          "messagingSenderId": "461076459515",
+          "appId": "1:461076459515:web:7379c40dbc09666ef3e55e",
+          "measurementId": "G-WPLZJ87DLV"
+        },
+        "_config": {
+          "name": "[DEFAULT]",
+          "automaticDataCollectionEnabled": false
+        },
+        "_name": "[DEFAULT]",
+        "_automaticDataCollectionEnabled": false,
+        "_container": { "name": "[DEFAULT]", "providers": {} }
+      },
+      "databaseId": {
+        "projectId": "parclsoltransactions",
+        "database": "(default)"
+      },
+      "settings": {
+        "host": "firestore.googleapis.com",
+        "ssl": true,
+        "ignoreUndefinedProperties": false,
+        "cacheSizeBytes": 41943040,
+        "experimentalForceLongPolling": false,
+        "experimentalAutoDetectLongPolling": true,
+        "experimentalLongPollingOptions": {},
+        "useFetchStreams": true
+      }
+    }
+  },
+  "_key": {
+    "path": {
+      "segments": [
+        "transactions",
+        "2LpBHAhQDhBT47snXJNFDnoWy85ha3FPGCEVqJf7AMXv"
+      ],
+      "offset": 0,
+      "len": 2
+    }
+  },
+  "_document": null,
+  "_converter": null,
+  "_firestoreImpl": {
+    "app": {
+      "_isDeleted": false,
+      "_options": {
+        "apiKey": "AIzaSyCnymgBlx5yirDHXVy23tpDmUX_mXpcAak",
+        "authDomain": "parclsoltransactions.firebaseapp.com",
+        "projectId": "parclsoltransactions",
+        "storageBucket": "parclsoltransactions.appspot.com",
+        "messagingSenderId": "461076459515",
+        "appId": "1:461076459515:web:7379c40dbc09666ef3e55e",
+        "measurementId": "G-WPLZJ87DLV"
+      },
+      "_config": {
+        "name": "[DEFAULT]",
+        "automaticDataCollectionEnabled": false
+      },
+      "_name": "[DEFAULT]",
+      "_automaticDataCollectionEnabled": false,
+      "_container": { "name": "[DEFAULT]", "providers": {} }
+    },
+    "databaseId": {
+      "projectId": "parclsoltransactions",
+      "database": "(default)"
+    },
+    "settings": {
+      "host": "firestore.googleapis.com",
+      "ssl": true,
+      "ignoreUndefinedProperties": false,
+      "cacheSizeBytes": 41943040,
+      "experimentalForceLongPolling": false,
+      "experimentalAutoDetectLongPolling": true,
+      "experimentalLongPollingOptions": {},
+      "useFetchStreams": true
+    }
+  },
+  "metadata": { "hasPendingWrites": false, "fromCache": false }
+}
