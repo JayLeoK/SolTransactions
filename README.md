@@ -1,5 +1,6 @@
 # SolTransactions
-Web app to send Solana transactions to another wallet
+Web app to send Solana transactions to another wallet.
+
 Visit the app at https://jayleok.github.io/SolTransactions/
 
 
