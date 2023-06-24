@@ -1,5 +1,10 @@
 # SolTransactions
 Web app to send Solana transactions to another wallet
+Visit the app at https://jayleok.github.io/SolTransactions/
+
+
+##Design doc breakdown
+
 Tools to set up this project: Yarn and vite were used to build and preview
 For data storage, I set up a database on firebase to save and access solana transactions.
 
