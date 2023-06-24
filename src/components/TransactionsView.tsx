@@ -1,3 +1,5 @@
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
 import React from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { SolTransaction } from "../models/SolTransaction";
@@ -21,8 +23,6 @@ const TransactionsTable: React.FC<Props> = () => {
     getTransactionsStatus: status,
   } = useTransactionsService({ publicKeyAddress: publicKey?.toString() ?? "" });
 
-  const rerender = React.useReducer(() => ({}), {})[1];
-
   React.useEffect(() => {
     const transactionsStatus = document.getElementById("transactionsStatus");
     if (status === "loading") {
@@ -35,23 +35,30 @@ const TransactionsTable: React.FC<Props> = () => {
   }, [status]);
 
   return (
-    <div id="transactionsTableView">
-      <div>
-        <span id="transactionsStatus"></span>
+    <>
+      <div css={styles.transactionsTable} id="transactionsTableView">
+        <div>
+          <span id="transactionsStatus"></span>
+        </div>
+        {transactions && (
+          <SolTransactionTable
+            data={transactions}
+            handleRowClick={handleRowClick}
+          ></SolTransactionTable>
+        )}
       </div>
-      <button onClick={() => rerender()}>Refresh</button>
-      {transactions && (
-        <SolTransactionTable
-          data={transactions}
-          handleRowClick={handleRowClick}
-        ></SolTransactionTable>
-      )}
       <TransactionDetailDialog
         transaction={transactionForDetails}
         handleClose={close}
       />
-    </div>
+    </>
   );
 };
 
 export default TransactionsTable;
+
+const styles = {
+  transactionsTable: {
+    padding: "32px",
+  },
+};

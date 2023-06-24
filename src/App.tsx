@@ -40,24 +40,24 @@ function App() {
   return (
     <>
       {publicKey ? (
-        <div css={appCss.container}>
-          <div css={appCss.navBar}>
-            <p>new page</p>
+        <div css={styles.appContainer}>
+          <div css={styles.navBar}>
+            <div css={styles.navBarTitle}>My Sol Transactions</div>
             <WalletMultiButton />
           </div>
-          <TransactionForm />
-          <div css={appCss.transactions}>transactions</div>
+          <div css={styles.formWrapper}>
+            <TransactionForm />
+          </div>
+
           <TransactionsView />
         </div>
       ) : (
-        <div css={appCss.homeContainer}>
-          <div css={appCss.homeHeader}>My Sol Transactions</div>
-          <section>
-            <p>Welcome. please connect a wallet to begin:</p>
-            <div>
-              <WalletMultiButton />
-            </div>
-          </section>
+        <div css={styles.homeContainer}>
+          <div css={styles.homeHeader}>My Sol Transactions</div>
+          <p>Welcome. please connect a wallet to begin:</p>
+          <div css={styles.multiButtonWrapper}>
+            <WalletMultiButton />
+          </div>
         </div>
       )}
     </>
@@ -66,7 +66,7 @@ function App() {
 
 export default App;
 
-const appCss = {
+const styles = {
   homeContainer: css({
     width: "100%",
     height: "100%",
@@ -79,15 +79,32 @@ const appCss = {
     fontWeight: 700,
     color: "yellow",
   }),
-  container: css({
+  appContainer: css({
     width: "100%",
-    height: "100%",
     backgroundColor: "darkslategray",
     display: "block",
+    minHeight: "100%",
+  }),
+  multiButtonWrapper: css({
+    marginTop: "16px",
+    display: "flex",
+    justifyContent: "right",
   }),
   navBar: css({
     width: "100%",
     height: "20%",
+    display: "flex",
+    padding: "12px 32px",
+    justifyContent: "space-between",
+  }),
+  navBarTitle: css({
+    color: "yellow",
+    fontSize: "2rem",
+    fontWeight: 700,
+  }),
+  formWrapper: css({
+    display: "flex",
+    justifyContent: "center",
   }),
   transactions: css({
     background: "lightGray",
